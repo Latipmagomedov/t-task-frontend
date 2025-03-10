@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Roboto", sans-serif;
+}
+
+:root {
+    --brand-color: rgba(224, 17, 157, 1);
+}
+
+.container {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+}
