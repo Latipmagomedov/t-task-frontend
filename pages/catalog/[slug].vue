@@ -17,15 +17,16 @@
 </template>
 
 <script setup lang="ts">
-import {useProductsStore} from '~/store/products'
+import {useProductsStore} from "~/store/products"
 import ProductCard from "~/pages/catalog/components/ProductCard.vue"
 import VAddedToBasket from "~/components/ui/VAddedToBasket.vue"
-import {apiPath} from '~/utils/api'
+import {apiPath} from "~/utils/api"
 import type {IProduct} from "~/interfaces/IProducts"
 
 const nuxtApp = useNuxtApp()
 const productsStore = useProductsStore()
 
+// Кеширование запроса
 const {data: products} = await useFetch(apiPath.products, {
     transform(input) {
         return {

@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <NuxtLink to="/catalog" class="home__link">
+        <NuxtLink to="/catalog/test" class="home__link">
             Перейти в раздел каталога
         </NuxtLink>
     </div>

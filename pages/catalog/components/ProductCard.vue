@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <div class="card__body">
+        <NuxtLink :to="product.url" class="card__body">
             <div class="card__image">
                 <img :src="product.image" :alt="product.name">
                 <span class="card__discount">-35%</span>
@@ -14,7 +14,7 @@
             <div class="card__brand">{{ product?.brand }}</div>
 
             <div class="card__name">{{ product.name }}</div>
-        </div>
+        </NuxtLink>
 
         <VButton name="В корзину" @click="emit('addToBasket', product)" class="card__btn"/>
 
